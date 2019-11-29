@@ -88,14 +88,14 @@ formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 1915634095,
+  "duration": 1831693961,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 335757639,
+  "duration": 416669261,
   "status": "passed"
 });
 formatter.match({
@@ -108,7 +108,7 @@ formatter.match({
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 298852700,
+  "duration": 308744093,
   "status": "passed"
 });
 formatter.match({
@@ -121,28 +121,28 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 413241786,
+  "duration": 477565610,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 671725045,
+  "duration": 749986481,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_see_the_dashboard()"
 });
 formatter.result({
-  "duration": 2417963690,
+  "duration": 1145739509,
   "status": "passed"
 });
 formatter.match({
   "location": "AccountTest.i_create_Account(DataTable)"
 });
 formatter.result({
-  "duration": 31252689936,
+  "duration": 29474716009,
   "status": "passed"
 });
 formatter.uri("feature/Login.feature");
@@ -195,14 +195,14 @@ formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 1046392838,
+  "duration": 1379975023,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 378991559,
+  "duration": 368256859,
   "status": "passed"
 });
 formatter.match({
@@ -215,7 +215,7 @@ formatter.match({
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 320948061,
+  "duration": 768084823,
   "status": "passed"
 });
 formatter.match({
@@ -228,21 +228,21 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 553015676,
+  "duration": 499828094,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 625320197,
+  "duration": 680771206,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_see_the_dashboard()"
 });
 formatter.result({
-  "duration": 915859151,
+  "duration": 1501779425,
   "status": "passed"
 });
 formatter.scenario({
@@ -287,14 +287,14 @@ formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 1985086392,
+  "duration": 1940449106,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 374970430,
+  "duration": 419352028,
   "status": "passed"
 });
 formatter.match({
@@ -307,7 +307,7 @@ formatter.match({
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 227698406,
+  "duration": 680109325,
   "status": "passed"
 });
 formatter.match({
@@ -320,21 +320,22 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 331894727,
+  "duration": 529601279,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 6841111903,
+  "duration": 6859382099,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_should_see_an_error_message()"
 });
 formatter.result({
-  "duration": 102110084,
-  "status": "passed"
+  "duration": 53817519,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Please check your username and password. If you still can\u0027t log in, contact your Salesforce administrator.]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:60)\n\tat ✽.Then I should see an error message(feature/Login.feature:18)\n",
+  "status": "failed"
 });
 });
