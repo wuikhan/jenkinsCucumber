@@ -9,7 +9,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	
 	public static void openBrowser() {
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") +"drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
