@@ -9,6 +9,7 @@ Feature: Test Salesforce login functionality
     When I click the login button
     Then I see the dashboard
 
+@SmokeTest
   Scenario: login using invalid credentials
     Given I open chrome browser
     And I go to salesforce home page
