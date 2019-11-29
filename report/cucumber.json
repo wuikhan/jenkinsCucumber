@@ -1,0 +1,351 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "login using valid credentials",
+        "description": "",
+        "id": "test-salesforce-login-functionality;login-using-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1915634095,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open chrome browser",
+            "match": {
+              "location": "LoginTest.i_open_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 335757639,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to salesforce home page",
+            "match": {
+              "location": "LoginTest.i_go_to_salesforce_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 298852700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter username as \"test.user@gmail.com.test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test.user@gmail.com.test",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_username_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 413241786,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter password as \"Welcome1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome1",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 671725045,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click the login button",
+            "match": {
+              "location": "LoginTest.i_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2417963690,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I see the dashboard",
+            "match": {
+              "location": "LoginTest.i_see_the_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31252689936,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I create Account",
+            "match": {
+              "location": "AccountTest.i_create_Account(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Account Name",
+                  "Phone",
+                  "Parent Account",
+                  "Fax",
+                  "Type",
+                  "Account Number"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "BOA",
+                  "703-626-6053",
+                  "Aethna Home Products",
+                  "703-090-0000",
+                  "Prospect",
+                  "10001"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Wachovia",
+                  "703-626-6053",
+                  "Burlington Textiles Corp of America",
+                  "703-090-0000",
+                  "Other",
+                  "20001"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Test Salesforce login functionality",
+    "description": "I want to use this feature file to test the login functionaility of our salesforce application.",
+    "id": "test-salesforce-login-functionality",
+    "keyword": "Feature",
+    "uri": "feature/CreateAccount.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "login using valid credentials",
+        "description": "",
+        "id": "test-salesforce-login-functionality;login-using-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1046392838,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open chrome browser",
+            "match": {
+              "location": "LoginTest.i_open_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 378991559,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to salesforce home page",
+            "match": {
+              "location": "LoginTest.i_go_to_salesforce_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 320948061,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter username as \"test.user@gmail.com.test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test.user@gmail.com.test",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_username_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 553015676,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter password as \"Welcome1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome1",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 625320197,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click the login button",
+            "match": {
+              "location": "LoginTest.i_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 915859151,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I see the dashboard",
+            "match": {
+              "location": "LoginTest.i_see_the_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "login using invalid credentials",
+        "description": "",
+        "id": "test-salesforce-login-functionality;login-using-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1985086392,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I open chrome browser",
+            "match": {
+              "location": "LoginTest.i_open_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 374970430,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I go to salesforce home page",
+            "match": {
+              "location": "LoginTest.i_go_to_salesforce_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 227698406,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter username as \"wrongemail@gmail.com.test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "wrongemail@gmail.com.test",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_username_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 331894727,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter password as \"Welcome1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome1",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6841111903,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click the login button",
+            "match": {
+              "location": "LoginTest.i_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102110084,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should see an error message",
+            "match": {
+              "location": "LoginTest.i_should_see_an_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test Salesforce login functionality",
+    "description": "I want to use this feature file to test the login functionaility of our salesforce application.",
+    "id": "test-salesforce-login-functionality",
+    "keyword": "Feature",
+    "uri": "feature/Login.feature"
+  }
+]
