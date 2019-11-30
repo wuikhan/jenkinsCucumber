@@ -1,18 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 22, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 50.198 sec <<< FAILURE! - in runner.TestRunner
-Then I should see an error message(Scenario: login using invalid credentials)  Time elapsed: 0.006 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Please check your username and password. If you still can't log in, contact your Salesforce administrator.]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:60)
-	at ✽.Then I should see an error message(feature/Login.feature:18)
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 5, Time elapsed: 0.147 sec <<< FAILURE! - in runner.TestRunner
+Given I open chrome browser(Scenario: login using invalid credentials)  Time elapsed: 0.01 sec  <<< ERROR!
+java.lang.NoSuchMethodError: org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:232)
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:104)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:94)
+	at utilities.BaseClass.openBrowser(BaseClass.java:15)
+	at stepDefinition.LoginTest.i_open_chrome_browser(LoginTest.java:15)
+	at ✽.Given I open chrome browser(feature/Login.feature:14)
 
-Scenario: login using invalid credentials  Time elapsed: 0.006 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Please check your username and password. If you still can't log in, contact your Salesforce administrator.]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:60)
-	at ✽.Then I should see an error message(feature/Login.feature:18)
+Scenario: login using invalid credentials  Time elapsed: 0.011 sec  <<< ERROR!
+java.lang.NoSuchMethodError: org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:232)
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:104)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:94)
+	at utilities.BaseClass.openBrowser(BaseClass.java:15)
+	at stepDefinition.LoginTest.i_open_chrome_browser(LoginTest.java:15)
+	at ✽.Given I open chrome browser(feature/Login.feature:14)
 

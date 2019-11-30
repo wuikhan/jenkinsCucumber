@@ -54,14 +54,14 @@ formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 1567619221,
+  "duration": 1517223095,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 573948733,
+  "duration": 514736896,
   "status": "passed"
 });
 formatter.match({
@@ -74,7 +74,7 @@ formatter.match({
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 165369135,
+  "duration": 327808578,
   "status": "passed"
 });
 formatter.match({
@@ -87,22 +87,21 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 331583628,
+  "duration": 496074182,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 5843723195,
+  "duration": 7363413681,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_should_see_an_error_message()"
 });
 formatter.result({
-  "duration": 53808706,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Please check your username and password. If you still can\u0027t log in, contact your Salesforce administrator.]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:60)\n\tat ✽.Then I should see an error message(feature/Login.feature:19)\n",
-  "status": "failed"
+  "duration": 73801822,
+  "status": "passed"
 });
 });

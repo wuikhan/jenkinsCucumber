@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.FailedRunner" time="0.001" tests="7" errors="2" skipped="0" failures="0">
+<testsuite name="runner.FailedRunner" time="0.001" tests="7" errors="2" skipped="5" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib"/>
@@ -25,15 +25,13 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/usr/local/apache-maven/apache-maven-3.5.3/bin/m2.conf"/>
+    <property name="classworlds.conf" value="/Users/waqaskhan/Desktop/BatchTwo/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7937477734870219923.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/waqaskhan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/usr/local/apache-maven/apache-maven-3.5.3/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.15.2"/>
-    <property name="library.jansi.path" value="/usr/local/apache-maven/apache-maven-3.5.3/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/waqaskhan"/>
     <property name="user.timezone" value="America/New_York"/>
@@ -41,11 +39,11 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="waqaskhan"/>
-    <property name="java.class.path" value="/usr/local/apache-maven/apache-maven-3.5.3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="/Users/waqaskhan/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.8.3.20180227-2135/jars/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -54,7 +52,7 @@
     <property name="java.ext.dirs" value="/Users/waqaskhan/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/usr/local/apache-maven/apache-maven-3.5.3"/>
+    <property name="maven.home" value="/Users/waqaskhan/Desktop/BatchTwo/com.codegator.cucumber/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -63,63 +61,79 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="Given I open chrome browser" classname="Scenario: login using invalid credentials" time="0"/>
-  <testcase name="And I go to salesforce home page" classname="Scenario: login using invalid credentials" time="0"/>
-  <testcase name="And I enter username as &quot;wrongemail@gmail.com.test&quot;" classname="Scenario: login using invalid credentials" time="0"/>
-  <testcase name="And I enter password as &quot;Welcome1&quot;" classname="Scenario: login using invalid credentials" time="0"/>
-  <testcase name="When I click the login button" classname="Scenario: login using invalid credentials" time="0"/>
-  <testcase name="Then I should see an error message" classname="Scenario: login using invalid credentials" time="0">
-    <error message="chrome not reachable&#10;  (Session info: chrome=78.0.3904.108)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;waqass-mbp.lan&apos;, ip: &apos;fe80:0:0:0:1c9c:684e:c408:5e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_151&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/db/szdzfk_j3wn...}, goog:chromeOptions: {debuggerAddress: localhost:59968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 31dd6d68d023f5f4904872656e523ba9&#10;*** Element info: {Using=id, value=error}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'waqass-mbp.lan', ip: 'fe80:0:0:0:1c9c:684e:c408:5e0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/db/szdzfk_j3wn...}, goog:chromeOptions: {debuggerAddress: localhost:59968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 31dd6d68d023f5f4904872656e523ba9
-*** Element info: {Using=id, value=error}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:59)
-	at ✽.Then I should see an error message(feature/Login.feature:18)
-</error>
+  <testcase name="Given I open chrome browser" classname="Scenario: login using invalid credentials" time="0">
+    <error message="org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:232)
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:104)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:94)
+	at utilities.BaseClass.openBrowser(BaseClass.java:15)
+	at stepDefinition.LoginTest.i_open_chrome_browser(LoginTest.java:15)
+	at ✽.Given I open chrome browser(feature/Login.feature:14)
+]]></error>
+    <system-out><![CDATA[
+  @SmokeTest
+  Scenario: login using invalid credentials             # feature/Login.feature:13
+    Given I open chrome browser                         # LoginTest.i_open_chrome_browser()
+      java.lang.NoSuchMethodError: org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;
+      	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:232)
+      	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
+      	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:104)
+      	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:94)
+      	at utilities.BaseClass.openBrowser(BaseClass.java:15)
+      	at stepDefinition.LoginTest.i_open_chrome_browser(LoginTest.java:15)
+      	at ✽.Given I open chrome browser(feature/Login.feature:14)
+
+    And I go to salesforce home page                    # LoginTest.i_go_to_salesforce_home_page()
+    And I enter username as "wrongemail@gmail.com.test" # LoginTest.i_enter_username_as(String)
+    And I enter password as "Welcome1"                  # LoginTest.i_enter_password_as(String)
+    When I click the login button                       # LoginTest.i_click_the_login_button()
+    Then I should see an error message                  # LoginTest.i_should_see_an_error_message()
+
+Failed scenarios:
+feature/Login.feature:13 # Scenario: login using invalid credentials
+
+1 Scenarios (1 failed)
+6 Steps (1 failed, 5 skipped)
+0m0.094s
+
+java.lang.NoSuchMethodError: org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:232)
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:104)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:94)
+	at utilities.BaseClass.openBrowser(BaseClass.java:15)
+	at stepDefinition.LoginTest.i_open_chrome_browser(LoginTest.java:15)
+	at ✽.Given I open chrome browser(feature/Login.feature:14)
+
+Feature: Test Salesforce login functionality
+  I want to use this feature file to test the login functionaility of our salesforce application.
+]]></system-out>
   </testcase>
   <testcase name="Scenario: login using invalid credentials" classname="Scenario: login using invalid credentials" time="0.001">
-    <error message="chrome not reachable&#10;  (Session info: chrome=78.0.3904.108)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;waqass-mbp.lan&apos;, ip: &apos;fe80:0:0:0:1c9c:684e:c408:5e0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_151&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/db/szdzfk_j3wn...}, goog:chromeOptions: {debuggerAddress: localhost:59968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 31dd6d68d023f5f4904872656e523ba9&#10;*** Element info: {Using=id, value=error}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'waqass-mbp.lan', ip: 'fe80:0:0:0:1c9c:684e:c408:5e0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/db/szdzfk_j3wn...}, goog:chromeOptions: {debuggerAddress: localhost:59968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 31dd6d68d023f5f4904872656e523ba9
-*** Element info: {Using=id, value=error}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:59)
-	at ✽.Then I should see an error message(feature/Login.feature:18)
-</error>
+    <error message="org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:232)
+	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:104)
+	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:94)
+	at utilities.BaseClass.openBrowser(BaseClass.java:15)
+	at stepDefinition.LoginTest.i_open_chrome_browser(LoginTest.java:15)
+	at ✽.Given I open chrome browser(feature/Login.feature:14)
+]]></error>
+  </testcase>
+  <testcase name="And I go to salesforce home page" classname="Scenario: login using invalid credentials" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And I enter username as &quot;wrongemail@gmail.com.test&quot;" classname="Scenario: login using invalid credentials" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And I enter password as &quot;Welcome1&quot;" classname="Scenario: login using invalid credentials" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="When I click the login button" classname="Scenario: login using invalid credentials" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then I should see an error message" classname="Scenario: login using invalid credentials" time="0">
+    <skipped/>
   </testcase>
 </testsuite>

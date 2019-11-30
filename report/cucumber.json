@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1567619221,
+              "duration": 1517223095,
               "status": "passed"
             },
             "line": 14,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 573948733,
+              "duration": 514736896,
               "status": "passed"
             },
             "line": 15,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 165369135,
+              "duration": 327808578,
               "status": "passed"
             },
             "line": 16,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 331583628,
+              "duration": 496074182,
               "status": "passed"
             },
             "line": 17,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 5843723195,
+              "duration": 7363413681,
               "status": "passed"
             },
             "line": 18,
@@ -84,9 +84,8 @@
           },
           {
             "result": {
-              "duration": 53808706,
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Please check your username and password. If you still can\u0027t log in, contact your Salesforce administrator.]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:60)\n\tat ✽.Then I should see an error message(feature/Login.feature:19)\n",
-              "status": "failed"
+              "duration": 73801822,
+              "status": "passed"
             },
             "line": 19,
             "name": "I should see an error message",
