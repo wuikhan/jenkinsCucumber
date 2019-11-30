@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 131471966,
+  "duration": 158004406,
   "status": "passed"
 });
 formatter.scenario({
@@ -44,11 +44,12 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
-  "name": "I see the dashboard",
-  "keyword": "Then "
-});
-formatter.step({
+  "comments": [
+    {
+      "line": 10,
+      "value": "#Then I see the dashboard"
+    }
+  ],
   "line": 11,
   "name": "I create Account",
   "rows": [
@@ -92,14 +93,14 @@ formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 830102026,
+  "duration": 1057397514,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 334120105,
+  "duration": 448921863,
   "status": "passed"
 });
 formatter.match({
@@ -112,7 +113,7 @@ formatter.match({
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 150181814,
+  "duration": 136724668,
   "status": "passed"
 });
 formatter.match({
@@ -125,32 +126,25 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 271489861,
+  "duration": 278952326,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 693536337,
+  "duration": 571223504,
   "status": "passed"
-});
-formatter.match({
-  "location": "LoginTest.i_see_the_dashboard()"
-});
-formatter.result({
-  "duration": 832104344,
-  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat stepDefinition.LoginTest.i_see_the_dashboard(LoginTest.java:52)\n\tat ✽.Then I see the dashboard(feature/CreateAccount.feature:10)\n",
-  "status": "failed"
 });
 formatter.match({
   "location": "AccountTest.i_create_Account(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 25680718567,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 810404270,
+  "duration": 117839535,
   "status": "passed"
 });
 formatter.uri("feature/Login.feature");
@@ -162,7 +156,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 843798,
+  "duration": 676011,
   "status": "passed"
 });
 formatter.scenario({
@@ -207,14 +201,14 @@ formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 368098690,
+  "duration": 336169217,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 310272467,
+  "duration": 322500569,
   "status": "passed"
 });
 formatter.match({
@@ -227,7 +221,7 @@ formatter.match({
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 491983825,
+  "duration": 227966445,
   "status": "passed"
 });
 formatter.match({
@@ -240,30 +234,30 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 106956712,
+  "duration": 381145607,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 406428876,
+  "duration": 384273414,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_see_the_dashboard()"
 });
 formatter.result({
-  "duration": 1040200986,
+  "duration": 867941862,
   "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat stepDefinition.LoginTest.i_see_the_dashboard(LoginTest.java:52)\n\tat ✽.Then I see the dashboard(feature/Login.feature:10)\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 537225718,
+  "duration": 774516983,
   "status": "passed"
 });
 formatter.before({
-  "duration": 735588,
+  "duration": 792267,
   "status": "passed"
 });
 formatter.scenario({
@@ -314,14 +308,14 @@ formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 388218654,
+  "duration": 336744419,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 323756073,
+  "duration": 312751450,
   "status": "passed"
 });
 formatter.match({
@@ -334,7 +328,7 @@ formatter.match({
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 530468157,
+  "duration": 467901401,
   "status": "passed"
 });
 formatter.match({
@@ -347,25 +341,26 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 112638607,
+  "duration": 157118734,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 6707634328,
+  "duration": 7121777968,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_should_see_an_error_message()"
 });
 formatter.result({
-  "duration": 47212678,
-  "status": "passed"
+  "duration": 103112415,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c...ease check your user[]ame and password. If...\u003e but was:\u003c...ease check your user[n]ame and password. If...\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:71)\n\tat ✽.Then I should see an error message(feature/Login.feature:19)\n",
+  "status": "failed"
 });
 formatter.after({
-  "duration": 89655430,
+  "duration": 628164726,
   "status": "passed"
 });
 });

@@ -32,7 +32,7 @@ public class LoginTest extends BaseClass {
 
 	@Given("^I enter username as \"([^\"]*)\"$")
 	public void i_enter_username_as(String username) {
-//		test = extent.createTest("logged in as");
+
 		driver.findElement(By.id("username")).sendKeys(username);
 	}
 
@@ -66,13 +66,9 @@ public class LoginTest extends BaseClass {
 
 	@Then("^I should see an error message$")
 	public void i_should_see_an_error_message() throws Throwable {
-		
-	
-		String expectedError = "Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
+		String expectedError = "Please check your userame and password. If you still can't log in, contact your Salesforce administrator.";
 		String actualError = driver.findElement(By.id("error")).getText();
 		Assert.assertEquals(expectedError, actualError);
-
-		
 	}
 
 	@Then("^I quit the browser$")

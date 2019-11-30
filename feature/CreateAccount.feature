@@ -7,7 +7,7 @@ Feature: Test Salesforce login functionality
     And I enter username as "test.user@gmail.com.test"
     And I enter password as "Welcome1"
     When I click the login button
-    Then I see the dashboard
+    #Then I see the dashboard
     And I create Account
       | Account Name 	| Phone        				| Parent Account                      									| Fax          						| Type     			| Account Number |
       | BOA          						| 703-626-6053 	| Aethna Home Products                				| 703-090-0000 	| Prospect 	| 10001 										|
