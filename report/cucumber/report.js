@@ -54,14 +54,14 @@ formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 1517223095,
+  "duration": 901204036,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 514736896,
+  "duration": 389646157,
   "status": "passed"
 });
 formatter.match({
@@ -74,7 +74,7 @@ formatter.match({
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 327808578,
+  "duration": 149609500,
   "status": "passed"
 });
 formatter.match({
@@ -87,21 +87,21 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 496074182,
+  "duration": 288465337,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 7363413681,
+  "duration": 6068047254,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_should_see_an_error_message()"
 });
 formatter.result({
-  "duration": 73801822,
+  "duration": 38497306,
   "status": "passed"
 });
 });
