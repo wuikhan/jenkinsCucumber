@@ -6,26 +6,26 @@
         "before": [
           {
             "result": {
-              "duration": 170851,
+              "duration": 131471966,
               "status": "passed"
             },
             "match": {
-              "location": "Hook.start()"
+              "location": "Hook.start(Scenario)"
             }
           }
         ],
-        "line": 13,
-        "name": "login using invalid credentials",
+        "line": 4,
+        "name": "Create Account using Valid credentials",
         "description": "",
-        "id": "test-salesforce-login-functionality;login-using-invalid-credentials",
+        "id": "test-salesforce-login-functionality;create-account-using-valid-credentials",
         "after": [
           {
             "result": {
-              "duration": 113452252,
+              "duration": 810404270,
               "status": "passed"
             },
             "match": {
-              "location": "Hook.stop()"
+              "location": "Hook.stop(Scenario)"
             }
           }
         ],
@@ -34,7 +34,297 @@
         "steps": [
           {
             "result": {
-              "duration": 1539404604,
+              "duration": 830102026,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open chrome browser",
+            "match": {
+              "location": "LoginTest.i_open_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 334120105,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to salesforce home page",
+            "match": {
+              "location": "LoginTest.i_go_to_salesforce_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150181814,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter username as \"test.user@gmail.com.test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test.user@gmail.com.test",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_username_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 271489861,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter password as \"Welcome1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome1",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 693536337,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click the login button",
+            "match": {
+              "location": "LoginTest.i_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 832104344,
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat stepDefinition.LoginTest.i_see_the_dashboard(LoginTest.java:52)\n\tat ✽.Then I see the dashboard(feature/CreateAccount.feature:10)\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "I see the dashboard",
+            "match": {
+              "location": "LoginTest.i_see_the_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I create Account",
+            "match": {
+              "location": "AccountTest.i_create_Account(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Account Name",
+                  "Phone",
+                  "Parent Account",
+                  "Fax",
+                  "Type",
+                  "Account Number"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "BOA",
+                  "703-626-6053",
+                  "Aethna Home Products",
+                  "703-090-0000",
+                  "Prospect",
+                  "10001"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Wachovia",
+                  "703-626-6053",
+                  "Burlington Textiles Corp of America",
+                  "703-090-0000",
+                  "Other",
+                  "20001"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Test Salesforce login functionality",
+    "description": "I want to use this feature file to test the login functionaility of our salesforce application.",
+    "id": "test-salesforce-login-functionality",
+    "keyword": "Feature",
+    "uri": "feature/CreateAccount.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 843798,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.start(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "login using valid credentials",
+        "description": "",
+        "id": "test-salesforce-login-functionality;login-using-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 537225718,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.stop(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 368098690,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open chrome browser",
+            "match": {
+              "location": "LoginTest.i_open_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 310272467,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to salesforce home page",
+            "match": {
+              "location": "LoginTest.i_go_to_salesforce_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 491983825,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter username as \"test.user@gmail.com.test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test.user@gmail.com.test",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_username_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106956712,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter password as \"Welcome1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome1",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.i_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 406428876,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click the login button",
+            "match": {
+              "location": "LoginTest.i_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1040200986,
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat stepDefinition.LoginTest.i_see_the_dashboard(LoginTest.java:52)\n\tat ✽.Then I see the dashboard(feature/Login.feature:10)\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "I see the dashboard",
+            "match": {
+              "location": "LoginTest.i_see_the_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 735588,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.start(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Invalid Login Attempt",
+        "description": "",
+        "id": "test-salesforce-login-functionality;invalid-login-attempt",
+        "after": [
+          {
+            "result": {
+              "duration": 89655430,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.stop(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 388218654,
               "status": "passed"
             },
             "line": 14,
@@ -46,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 374943413,
+              "duration": 323756073,
               "status": "passed"
             },
             "line": 15,
@@ -58,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 190231377,
+              "duration": 530468157,
               "status": "passed"
             },
             "line": 16,
@@ -76,7 +366,7 @@
           },
           {
             "result": {
-              "duration": 178384438,
+              "duration": 112638607,
               "status": "passed"
             },
             "line": 17,
@@ -94,7 +384,7 @@
           },
           {
             "result": {
-              "duration": 6960114354,
+              "duration": 6707634328,
               "status": "passed"
             },
             "line": 18,
@@ -106,7 +396,7 @@
           },
           {
             "result": {
-              "duration": 528325476,
+              "duration": 47212678,
               "status": "passed"
             },
             "line": 19,

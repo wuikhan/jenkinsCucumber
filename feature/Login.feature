@@ -10,7 +10,7 @@ Feature: Test Salesforce login functionality
     Then I see the dashboard
 
 @SmokeTest
-  Scenario: login using invalid credentials
+  Scenario: Invalid Login Attempt
     Given I open chrome browser
     And I go to salesforce home page
     And I enter username as "wrongemail@gmail.com.test"

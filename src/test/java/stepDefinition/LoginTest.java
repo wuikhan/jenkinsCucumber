@@ -11,6 +11,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -31,6 +32,7 @@ public class LoginTest extends BaseClass {
 
 	@Given("^I enter username as \"([^\"]*)\"$")
 	public void i_enter_username_as(String username) {
+//		test = extent.createTest("logged in as");
 		driver.findElement(By.id("username")).sendKeys(username);
 	}
 
@@ -45,9 +47,9 @@ public class LoginTest extends BaseClass {
 	}
 
 	@Then("^I see the dashboard$")
-	public void i_see_the_dashboard() {
+	public void i_see_the_dashboard() throws IOException {
 		boolean isPresent = driver.findElement(By.id("phHeaderLogoImage")).isDisplayed();
-		Assert.assertTrue(isPresent);
+		Assert.assertTrue(false);
 	}
 
 	@Then("^I click the \"([^\"]*)\" tab$")
@@ -64,36 +66,11 @@ public class LoginTest extends BaseClass {
 
 	@Then("^I should see an error message$")
 	public void i_should_see_an_error_message() throws Throwable {
+		
+	
 		String expectedError = "Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
 		String actualError = driver.findElement(By.id("error")).getText();
 		Assert.assertEquals(expectedError, actualError);
-		
-		
-		   // start reporters
-         htmlReporter = new ExtentHtmlReporter("extent1.html");
-    
-        // create ExtentReports and attach reporter(s)
-         extent = new ExtentReports();
-        extent.attachReporter(htmlReporter);
-
-        // creates a toggle for the given test, adds all log events under it    
-         test = extent.createTest("My Second Test", "Sample description");
-
-        // log(Status, details)
-        test.log(Status.INFO, "This step shows usage of log(status, details)");
-
-        // info(details)
-        test.info("This step shows usage of info(details)");
-        
-        // log with snapshot
-        test.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
-
-        
-        // test with snapshot
-        test.addScreenCaptureFromPath("screenshot.png");
-        
-        // calling flush writes everything to the log file
-        extent.flush();
 
 		
 	}

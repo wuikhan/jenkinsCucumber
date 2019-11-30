@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.TestRunner" time="0.011" tests="7" errors="0" skipped="0" failures="2">
+<testsuite name="runner.TestRunner" time="0.127" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib"/>
@@ -68,20 +68,6 @@
   <testcase name="And I enter username as &quot;wrongemail@gmail.com.test&quot;" classname="Scenario: login using invalid credentials" time="0"/>
   <testcase name="And I enter password as &quot;Welcome1&quot;" classname="Scenario: login using invalid credentials" time="0"/>
   <testcase name="When I click the login button" classname="Scenario: login using invalid credentials" time="0"/>
-  <testcase name="Then I should see an error message" classname="Scenario: login using invalid credentials" time="0.005">
-    <failure message="expected:&lt;...our username and pas[]word. If you still c...&gt; but was:&lt;...our username and pas[s]word. If you still c...&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<...our username and pas[]word. If you still c...> but was:<...our username and pas[s]word. If you still c...>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:69)
-	at ✽.Then I should see an error message(feature/Login.feature:19)
-]]></failure>
-  </testcase>
-  <testcase name="Scenario: login using invalid credentials" classname="Scenario: login using invalid credentials" time="0.005">
-    <failure message="expected:&lt;...our username and pas[]word. If you still c...&gt; but was:&lt;...our username and pas[s]word. If you still c...&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<...our username and pas[]word. If you still c...> but was:<...our username and pas[s]word. If you still c...>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:69)
-	at ✽.Then I should see an error message(feature/Login.feature:19)
-]]></failure>
-  </testcase>
+  <testcase name="Then I should see an error message" classname="Scenario: login using invalid credentials" time="0"/>
+  <testcase name="Scenario: login using invalid credentials" classname="Scenario: login using invalid credentials" time="0.126"/>
 </testsuite>

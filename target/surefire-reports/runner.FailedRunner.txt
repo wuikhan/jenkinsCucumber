@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runner.FailedRunner
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 14.905 sec <<< FAILURE! - in runner.FailedRunner
-Then I should see an error message(Scenario: login using invalid credentials)  Time elapsed: 0.001 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Please check your username and pasword. If you still can't log in, contact your Salesforce administrator.]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:69)
-	at ✽.Then I should see an error message(feature/Login.feature:19)
-
-Scenario: login using invalid credentials  Time elapsed: 0.001 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Please check your username and pasword. If you still can't log in, contact your Salesforce administrator.]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:69)
-	at ✽.Then I should see an error message(feature/Login.feature:19)
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in runner.FailedRunner

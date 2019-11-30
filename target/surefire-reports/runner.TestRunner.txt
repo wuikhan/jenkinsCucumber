@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.947 sec <<< FAILURE! - in runner.TestRunner
-Then I should see an error message(Scenario: login using invalid credentials)  Time elapsed: 0.005 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...our username and pas[]word. If you still c...> but was:<...our username and pas[s]word. If you still c...>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:69)
-	at ✽.Then I should see an error message(feature/Login.feature:19)
-
-Scenario: login using invalid credentials  Time elapsed: 0.005 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...our username and pas[]word. If you still c...> but was:<...our username and pas[s]word. If you still c...>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepDefinition.LoginTest.i_should_see_an_error_message(LoginTest.java:69)
-	at ✽.Then I should see an error message(feature/Login.feature:19)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.309 sec - in runner.TestRunner
