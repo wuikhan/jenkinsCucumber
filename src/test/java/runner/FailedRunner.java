@@ -12,8 +12,6 @@ import cucumber.api.junit.Cucumber;
 		dryRun=false,
 		plugin= {
 				"pretty",
-				"html:reportForFailedScenario/cucumber",
-				"json:reportForFailedScenario/cucumber.json",
 				"rerun:rerun/failed_scenario.txt"
 				},
 		monochrome=true)

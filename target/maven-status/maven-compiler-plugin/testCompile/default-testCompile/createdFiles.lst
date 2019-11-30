@@ -3,3 +3,4 @@ utilities/BaseClass.class
 runner/FailedRunner.class
 stepDefinition/AccountTest.class
 stepDefinition/LoginTest.class
+stepDefinition/Hook.class

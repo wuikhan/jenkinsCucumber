@@ -3,16 +3,38 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 170851,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.start()"
+            }
+          }
+        ],
         "line": 13,
         "name": "login using invalid credentials",
         "description": "",
         "id": "test-salesforce-login-functionality;login-using-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 113452252,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.stop()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 901204036,
+              "duration": 1539404604,
               "status": "passed"
             },
             "line": 14,
@@ -24,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 389646157,
+              "duration": 374943413,
               "status": "passed"
             },
             "line": 15,
@@ -36,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 149609500,
+              "duration": 190231377,
               "status": "passed"
             },
             "line": 16,
@@ -54,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 288465337,
+              "duration": 178384438,
               "status": "passed"
             },
             "line": 17,
@@ -72,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 6068047254,
+              "duration": 6960114354,
               "status": "passed"
             },
             "line": 18,
@@ -84,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 38497306,
+              "duration": 528325476,
               "status": "passed"
             },
             "line": 19,

@@ -6,6 +6,10 @@ formatter.feature({
   "id": "test-salesforce-login-functionality",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 170851,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 13,
   "name": "login using invalid credentials",
@@ -54,14 +58,14 @@ formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 901204036,
+  "duration": 1539404604,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 389646157,
+  "duration": 374943413,
   "status": "passed"
 });
 formatter.match({
@@ -74,7 +78,7 @@ formatter.match({
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 149609500,
+  "duration": 190231377,
   "status": "passed"
 });
 formatter.match({
@@ -87,21 +91,25 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 288465337,
+  "duration": 178384438,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 6068047254,
+  "duration": 6960114354,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_should_see_an_error_message()"
 });
 formatter.result({
-  "duration": 38497306,
+  "duration": 528325476,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 113452252,
   "status": "passed"
 });
 });

@@ -1,7 +1,15 @@
 package stepDefinition;
 
+import java.io.IOException;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -11,8 +19,9 @@ import utilities.BaseClass;
 public class LoginTest extends BaseClass {
 
 	@Given("^I open chrome browser$")
-	public void i_open_chrome_browser() {
+	public void i_open_chrome_browser() throws IOException {
 		openBrowser();
+
 	}
 
 	@Given("^I go to salesforce home page$")
@@ -58,6 +67,40 @@ public class LoginTest extends BaseClass {
 		String expectedError = "Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
 		String actualError = driver.findElement(By.id("error")).getText();
 		Assert.assertEquals(expectedError, actualError);
+		
+		
+		   // start reporters
+         htmlReporter = new ExtentHtmlReporter("extent1.html");
+    
+        // create ExtentReports and attach reporter(s)
+         extent = new ExtentReports();
+        extent.attachReporter(htmlReporter);
+
+        // creates a toggle for the given test, adds all log events under it    
+         test = extent.createTest("My Second Test", "Sample description");
+
+        // log(Status, details)
+        test.log(Status.INFO, "This step shows usage of log(status, details)");
+
+        // info(details)
+        test.info("This step shows usage of info(details)");
+        
+        // log with snapshot
+        test.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
+
+        
+        // test with snapshot
+        test.addScreenCaptureFromPath("screenshot.png");
+        
+        // calling flush writes everything to the log file
+        extent.flush();
+
+		
+	}
+
+	@Then("^I quit the browser$")
+	public void i_quit_the_browser() {
+		driver.quit();
 	}
 
 }

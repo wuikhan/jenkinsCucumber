@@ -17,3 +17,4 @@ Feature: Test Salesforce login functionality
     And I enter password as "Welcome1"
     When I click the login button
     Then I should see an error message
+ 
