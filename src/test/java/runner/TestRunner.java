@@ -16,6 +16,7 @@ import cucumber.api.junit.Cucumber;
 				"json:report/cucumber.json",
 				"rerun:rerun/failed_scenario.txt"
 				},
+		
 		monochrome=true)
 
 public class TestRunner {
