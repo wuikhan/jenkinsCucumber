@@ -28,7 +28,6 @@ public class LoginTest extends BaseClass {
 	@Given("^I enter username as \"([^\"]*)\"$")
 	public void i_enter_username_as(String username) {
 		driver.findElement(By.id("username")).sendKeys(username);
-	
 	}
 
 	@Given("^I enter password as \"([^\"]*)\"$")
