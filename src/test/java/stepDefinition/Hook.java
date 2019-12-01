@@ -24,16 +24,22 @@ public class Hook extends BaseClass {
 
 	@Before
 	public void start(Scenario scenario) {
+		
 		System.out.println("Scenario Name :" + scenario.getName());
 		htmlReporter = new ExtentHtmlReporter("extent-report.html");
 		extent = new ExtentReports();
+		extent.setSystemInfo("os", System.getProperty("os.name"));
+		extent.setSystemInfo("user directory", System.getProperty("user.dir"));
+		extent.setSystemInfo("user name", System.getProperty("user.name"));
 		extent.attachReporter(htmlReporter);
+	
+//		test = extent.createTest(scenario.getName(), "This test case will check the visibility of dashboard.");
 	}
 
 	@After
 	public void stop(Scenario scenario) throws IOException {
 		
-		test = extent.createTest(scenario.getName(), "This test case will check the visibility of dashboard.");
+		//test = extent.createTest(scenario.getName(), "This test case will check the visibility of dashboard.");
 
 		if (scenario.isFailed()) {
 			String name = scenario.getName() + " - " + scenario.getStatus();
