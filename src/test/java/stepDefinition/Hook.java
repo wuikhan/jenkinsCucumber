@@ -1,8 +1,10 @@
 package stepDefinition;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
@@ -30,16 +32,22 @@ public class Hook extends BaseClass {
 
 	@After
 	public void stop(Scenario scenario) throws IOException {
-		String name = scenario.getName() + " - " + scenario.getStatus();
+		
 		test = extent.createTest(scenario.getName(), "This test case will check the visibility of dashboard.");
-		test.log(Status.INFO, "This step shows usage of log(status, details)");
-		test.info("This step shows usage of info(details)");
+
 		if (scenario.isFailed()) {
-			test.log(Status.FAIL, "Failed due to some issue");
+			String name = scenario.getName() + " - " + scenario.getStatus();
 			test.fail(MarkupHelper.createLabel(scenario.getName(), ExtentColor.RED));
 			takeScreen(name);
-			test.addScreenCaptureFromPath("./Screenshots/" + name + ".png");
+			test.addScreenCaptureFromPath("./Screenshots/"+name+".png");
 			extent.flush();
+		} else  {
+			String name = scenario.getName() + " - " + scenario.getStatus();
+			test.pass(MarkupHelper.createLabel(scenario.getName(), ExtentColor.GREEN));
+			takeScreen(name);
+			test.addScreenCaptureFromPath("./Screenshots/"+name+".png");
+			extent.flush();
+			
 		}
 
 		driver.quit();

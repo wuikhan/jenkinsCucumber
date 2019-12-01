@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 				"json:report/cucumber.json",
 				"rerun:rerun/failed_scenario.txt"
 				},
-		
+		tags="@SmokeTest",
 		monochrome=true)
 
 public class TestRunner {
