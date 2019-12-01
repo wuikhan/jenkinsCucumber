@@ -24,7 +24,12 @@ public class Hook extends BaseClass {
 
 	@Before
 	public void start(Scenario scenario) {
-		
+		File file = new File("./Screenshots/");
+		try {
+			FileUtils.deleteDirectory(file);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		System.out.println("Scenario Name :" + scenario.getName());
 		htmlReporter = new ExtentHtmlReporter("extent-report.html");
 		extent = new ExtentReports();
@@ -32,30 +37,26 @@ public class Hook extends BaseClass {
 		extent.setSystemInfo("user directory", System.getProperty("user.dir"));
 		extent.setSystemInfo("user name", System.getProperty("user.name"));
 		extent.attachReporter(htmlReporter);
-	
-//		test = extent.createTest(scenario.getName(), "This test case will check the visibility of dashboard.");
 	}
 
 	@After
 	public void stop(Scenario scenario) throws IOException {
-		
-		//test = extent.createTest(scenario.getName(), "This test case will check the visibility of dashboard.");
+
+		test = extent.createTest(scenario.getName(), "This test case will check the visibility of dashboard.");
 
 		if (scenario.isFailed()) {
 			String name = scenario.getName() + " - " + scenario.getStatus();
 			test.fail(MarkupHelper.createLabel(scenario.getName(), ExtentColor.RED));
 			takeScreen(name);
-			test.addScreenCaptureFromPath("./Screenshots/"+name+".png");
+			test.addScreenCaptureFromPath("./Screenshots/" + name + ".png");
 			extent.flush();
-		} else  {
+		} else {
 			String name = scenario.getName() + " - " + scenario.getStatus();
 			test.pass(MarkupHelper.createLabel(scenario.getName(), ExtentColor.GREEN));
 			takeScreen(name);
-			test.addScreenCaptureFromPath("./Screenshots/"+name+".png");
+			test.addScreenCaptureFromPath("./Screenshots/" + name + ".png");
 			extent.flush();
-			
 		}
-
 		driver.quit();
 	}
 
