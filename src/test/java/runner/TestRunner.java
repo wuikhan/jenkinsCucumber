@@ -1,7 +1,6 @@
 package runner;
 
 import org.junit.runner.RunWith;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
@@ -19,6 +18,7 @@ import cucumber.api.junit.Cucumber;
 		tags="@SmokeTest",
 		monochrome=true)
 
-public class TestRunner {
+public class TestRunner   {
 
+	
 }
