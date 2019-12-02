@@ -7,78 +7,78 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 180202842,
+  "duration": 82898473,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 13,
-  "name": "Invalid Login Attempt",
+  "line": 5,
+  "name": "login using valid credentials",
   "description": "",
-  "id": "test-salesforce-login-functionality;invalid-login-attempt",
+  "id": "test-salesforce-login-functionality;login-using-valid-credentials",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 12,
+      "line": 4,
       "name": "@SmokeTest"
     }
   ]
 });
 formatter.step({
-  "line": 14,
+  "line": 6,
   "name": "I open chrome browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 15,
+  "line": 7,
   "name": "I go to salesforce home page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
-  "name": "I enter username as \"wrongemail@gmail.com.test\"",
+  "line": 8,
+  "name": "I enter username as \"test.user@gmail.com.test\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 9,
   "name": "I enter password as \"Welcome1\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 10,
   "name": "I click the login button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 19,
-  "name": "I should see an error message",
+  "line": 11,
+  "name": "I see the dashboard",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginTest.i_open_chrome_browser()"
 });
 formatter.result({
-  "duration": 934638178,
+  "duration": 952008951,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_go_to_salesforce_home_page()"
 });
 formatter.result({
-  "duration": 609400274,
+  "duration": 549644675,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "wrongemail@gmail.com.test",
+      "val": "test.user@gmail.com.test",
       "offset": 21
     }
   ],
   "location": "LoginTest.i_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 164010758,
+  "duration": 164335946,
   "status": "passed"
 });
 formatter.match({
@@ -91,25 +91,131 @@ formatter.match({
   "location": "LoginTest.i_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 77669630,
+  "duration": 140332317,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 7351769035,
+  "duration": 893210193,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginTest.i_see_the_dashboard()"
+});
+formatter.result({
+  "duration": 1301206393,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 924455344,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 731557,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 14,
+  "name": "Invalid Login Attempt",
+  "description": "",
+  "id": "test-salesforce-login-functionality;invalid-login-attempt",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 13,
+      "name": "@SmokeTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 15,
+  "name": "I open chrome browser",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 16,
+  "name": "I go to salesforce home page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "I enter username as \"wrongemail@gmail.com.test\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "I enter password as \"Welcome1\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "I click the login button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 20,
+  "name": "I should see an error message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginTest.i_open_chrome_browser()"
+});
+formatter.result({
+  "duration": 358464001,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginTest.i_go_to_salesforce_home_page()"
+});
+formatter.result({
+  "duration": 562773819,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "wrongemail@gmail.com.test",
+      "offset": 21
+    }
+  ],
+  "location": "LoginTest.i_enter_username_as(String)"
+});
+formatter.result({
+  "duration": 261746591,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Welcome1",
+      "offset": 21
+    }
+  ],
+  "location": "LoginTest.i_enter_password_as(String)"
+});
+formatter.result({
+  "duration": 399616045,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginTest.i_click_the_login_button()"
+});
+formatter.result({
+  "duration": 7354770523,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_should_see_an_error_message()"
 });
 formatter.result({
-  "duration": 92421806,
+  "duration": 119988492,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1272179855,
+  "duration": 582267495,
   "status": "passed"
 });
 });

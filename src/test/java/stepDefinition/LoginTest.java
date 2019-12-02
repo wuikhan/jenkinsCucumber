@@ -5,26 +5,20 @@ import java.io.IOException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
-import com.aventstack.extentreports.GherkinKeyword;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import utilities.BaseClass;
 
 public class LoginTest extends BaseClass {
-	
 
 	@Given("^I open chrome browser$")
 	public void i_open_chrome_browser() throws IOException {
-	
 		openBrowser();
-
 	}
 
 	@Given("^I go to salesforce home page$")
-	public void i_go_to_salesforce_home_page()  {
-		
+	public void i_go_to_salesforce_home_page() {
 		driver.get("https://login.salesforce.com");
 	}
 

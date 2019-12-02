@@ -2,7 +2,6 @@ package utilities;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -21,7 +20,6 @@ public class BaseClass {
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
-
 
 	public static void openBrowser() {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
@@ -45,5 +43,6 @@ public class BaseClass {
 		// Step 4: Copy the source file to the destination location
 		FileUtils.copyFile(srcFile, destFile);
 	}
+
 
 }
